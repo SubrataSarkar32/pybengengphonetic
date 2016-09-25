@@ -46,7 +46,7 @@ def parse(text):
     Usage:
 
     ::
-      from pyavrophonetic import avro
+      from pybengengphonetic import hinavro
       hinavro.parse(u'\u0995\u09c7\u09ae\u09a8 \u0986\u099b')
 
     """
