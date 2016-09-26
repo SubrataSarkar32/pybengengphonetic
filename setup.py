@@ -12,7 +12,7 @@ try:
           author='Subrata Sarkar',
           author_email='subrotosarkar32@gmail.com',
           url='https://bitbucket.org/SubrataSarkar32/pybengengphonetic/',
-          packages=['pybengenghonetic','pybengenghonetic.utils'],
+          packages=['pybengengphonetic','pybengengphonetic.utils'],
           package_data = {'pyhinavrophonetic': ['*.rst', 'resources/*.json','utils/resources/*.json']},
           include_package_data = True,
           install_requires=["simplejson >= 3.0.0",'pyttsx >=1.1'],
