@@ -1,0 +1,44 @@
+Metadata-Version: 1.1
+Name: pybengengphonetic
+Version: 1.0.0
+Author: Subrata Sarkar
+Author-email: subrotosarkar32 at gmail com
+Home-page: https://bitbucket.org/SubrataSarkar32/pybengengphonetic/
+Download-url: https://bitbucket.org/SubrataSarkar32/pybengengphonetic/
+Summary: Python implementation to convert bengali to phonetic
+Description: Python implementation of Avro Phonetic in bengali.
+        
+        -------------------------------------------------------------------------------
+        Copyright (C) 2016 Subrata Sarkar <subrotosarkar32@gmail.com>
+        original by:- Subrata Sarkar <subrotosarkar32@gmail.com>
+        
+        This file is part of pybengengphonetic.
+        
+        pybengengphonetic is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+        
+        pybengengphonetic is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+        
+        You should have received a copy of the GNU General Public License
+        along with pybengengphonetic.  If not, see <http://www.gnu.org/licenses/>.
+        
+        This tool converts unicode data to speakable pyttsx data
+           using convert_to_pyttsx_speakable() and converts unicode data to speakable
+           phonetic using convert_to_speakable_phonetic() and speak bengali
+           using speak()
+        Example:convert_to_pyttsx_speakable(u'\u0995\u09c7\u09ae\u09a8 \u0986\u099b')
+                speak(u'\u0995\u09c7\u09ae\u09a8 \u0986\u099b')
+        Requires simplejson>=3.0,pyttsx>=1.1
+Keywords: bengali to phonetic
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.5
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
