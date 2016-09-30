@@ -27,26 +27,37 @@ Example:convert_to_pyttsx_speakable(u'\u0995\u09c7\u09ae\u09a8 \u0986\u099b')
         speak(u'\u0995\u09c7\u09ae\u09a8 \u0986\u099b')'''
 def convert_to_pyttsx_speakable(gitre=u''):
     text2=u''
-    count=0
+    
+    list19=[]
     import string
     for letter in gitre:
-       if count!=0:
-             try:
-                 str(letter)
-                 text2+=letter
-             except UnicodeEncodeError:
+        list19+=[letter]
+    singlet=0
+    while singlet <(len(list19)):
+        try:
+                 str(list19[singlet])
+                 text2+=list19[singlet]
+        except UnicodeEncodeError:
                  matra=u'\u09be\u09bf\u09c0\u09c1\u09c2\u09c3\u09c7\u09c8\u09cb\u09cc\u0985\u0986\u0987\u0988\u0989\u098a\u098b\u098c\u098f\u0990\u0993\u0994'
                  try:
-                     if letter in matra:
-                         text2+=letter
-                     elif letter in unicode(string.printable):
-                        text2=text2+letter
+                     if list19[singlet+1] in matra:
+                         text2+=list19[singlet]
+                         singlet+=1
+                         text2+=list19[singlet]
+                     elif list19[singlet] in unicode(string.printable):
+                        text2=text2+list19[singlet]
+                     elif list19[singlet] in matra:
+                        text2=text2+list19[singlet]
                      else:
-                         text2=text2+letter+u'o'
+                         text2=text2+list19[singlet]+u'o'
                  except:
-                     text2+=letter
-       else:
-          count+=1
+                     if list19[singlet] in unicode(string.printable):
+                        text2=text2+list19[singlet]
+                     elif list19[singlet] in matra:
+                        text2=text2+list19[singlet]
+                     else:
+                         text2=text2+list19[singlet]+u'o'
+        singlet+=1
     gitre=text2
     import hinavro
     gitre=hinavro.parse(gitre)
@@ -54,27 +65,39 @@ def convert_to_pyttsx_speakable(gitre=u''):
 
 def convert_to_speakable_phonetic(gitre=u''):
     text2=u''
-    count=0
+    
+    list19=[]
     import string
     for letter in gitre:
-       if count!=0:
-             try:
-                 str(letter)
-                 text2+=letter
-             except UnicodeEncodeError:
+        list19+=[letter]
+    singlet=0
+    while singlet <(len(list19)):
+        try:
+                 str(list19[singlet])
+                 text2+=list19[singlet]
+        except UnicodeEncodeError:
                  matra=u'\u09be\u09bf\u09c0\u09c1\u09c2\u09c3\u09c7\u09c8\u09cb\u09cc\u0985\u0986\u0987\u0988\u0989\u098a\u098b\u098c\u098f\u0990\u0993\u0994'
                  try:
-                     if letter in matra:
-                         text2+=letter
-                     elif letter in unicode(string.printable):
-                        text2=text2+letter
+                     if list19[singlet+1] in matra:
+                         text2+=list19[singlet]
+                         singlet+=1
+                         text2+=list19[singlet]
+                     elif list19[singlet] in unicode(string.printable):
+                        text2=text2+list19[singlet]
+                     elif list19[singlet] in matra:
+                        text2=text2+list19[singlet]
                      else:
-                         text2=text2+letter+u'o'
+                         text2=text2+list19[singlet]+u'o'
                  except:
-                     text2+=letter
-       else:
-          count+=1
-          
+                     if list19[singlet] in unicode(string.printable):
+                        text2=text2+list19[singlet]
+                     elif list19[singlet] in matra:
+                        text2=text2+list19[singlet]
+                     else:
+                         text2=text2+list19[singlet]+u'o'
+        singlet+=1
+    return text2
+
 def speak(text=u''):
     import pyttsx
     engine = pyttsx.init()
