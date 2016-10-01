@@ -2,9 +2,8 @@
 pybengengphonetic
 ==============
 Python implementation to convert unicode bengali text to speable english text for pyttsx and to english phonetic
-Below is license of 
-pyAvroPhonetic
- from which it has been derived
+
+
 License
 =======
 
@@ -41,7 +40,9 @@ The full license text can be found in ``LICENSE``.
    :target: https://travis-ci.org/kaustavdm/pyAvroPhonetic
 .. _Md Enzam Hossain: https://github.com/ienzam
 .. _Sarim Khan: https://github.com/sarim
-
+Below is license of 
+pyAvroPhonetic
+ from which it has been derived
 ==============
 pyAvroPhonetic
 ==============
