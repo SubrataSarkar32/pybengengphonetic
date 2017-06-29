@@ -42,7 +42,39 @@ The full license text can be found in ``LICENSE``.
 .. _Sarim Khan: https://github.com/sarim
 Below is license of 
 pyAvroPhonetic
- from which it has been derived
+Installation
+============
+
+Using Git:
+
+::
+
+    $ git clone git@bitbucket.org:SubrataSarkar32/pybengengphonetic.git
+    $ cd pybengengphonetic
+    $ sudo python setup.py install
+
+
+Using Pip:
+
+::
+
+    $ sudo pip install pybengengphonetic
+
+Contributing
+============
+
+**Fork** -> **Do your changes** -> **Send a Pull Request**. It's that
+easy!
+
+Coding style follows `PEP 8`_ along with `PEP 257`_ for Docstring
+conventions.
+
+Also, if you find any bugs, please report them in the Issues queue. As
+always, before you report any new issue, please check that it has not
+been already posted by someone else.
+
+ from which it has been derived:
+
 ==============
 pyAvroPhonetic
 ==============
