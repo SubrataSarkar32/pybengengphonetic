@@ -40,8 +40,7 @@ The full license text can be found in ``LICENSE``.
    :target: https://travis-ci.org/kaustavdm/pyAvroPhonetic
 .. _Md Enzam Hossain: https://github.com/ienzam
 .. _Sarim Khan: https://github.com/sarim
-Below is license of 
-pyAvroPhonetic
+
 Installation
 ============
 
@@ -72,6 +71,9 @@ conventions.
 Also, if you find any bugs, please report them in the Issues queue. As
 always, before you report any new issue, please check that it has not
 been already posted by someone else.
+
+Below is license of 
+pyAvroPhonetic
 
  from which it has been derived:
 
