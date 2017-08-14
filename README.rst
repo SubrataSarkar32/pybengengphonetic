@@ -57,7 +57,7 @@ Using Git:
 
 ::
 
-    $ git clone git@bitbucket.org:SubrataSarkar32/pybengengphonetic.git
+    $ git clone https://github.com/SubrataSarkar32/pybengengphonetic.git
     $ cd pybengengphonetic
     $ sudo python setup.py install
 
