@@ -25,23 +25,12 @@ along with pyAvroPhonetic.  If not, see <http://www.gnu.org/licenses/>.
 
 """
 
-
-# Imports
-from . import config
-
-
-def count_vowels(text):
-    """Count number of occurrences of vowels in a given string"""
-    count = 0
-    for i in text:
-        if i.lower() in config.AVRO_VOWELS:
-            count += 1
-    return count
-
-def count_consonants(text):
-    """Count number of occurrences of consonants in a given string"""
-    count = 0
-    for i in text:
-        if i.lower() in config.AVRO_CONSONANTS:
-            count += 1
-    return count
+def utf(text):
+    """Shortcut funnction for encoding given text with utf-8"""
+    try:
+        output = unicode(text, encoding='utf-8')
+    except UnicodeDecodeError:
+        output = text
+    except TypeError:
+        output = text
+    return output

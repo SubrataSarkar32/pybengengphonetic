@@ -27,21 +27,23 @@ along with pyAvroPhonetic.  If not, see <http://www.gnu.org/licenses/>.
 
 
 # Imports
-from . import config
+import os
+import simplejson as json
+import codecs
 
 
-def count_vowels(text):
-    """Count number of occurrences of vowels in a given string"""
-    count = 0
-    for i in text:
-        if i.lower() in config.AVRO_VOWELS:
-            count += 1
-    return count
-
-def count_consonants(text):
-    """Count number of occurrences of consonants in a given string"""
-    count = 0
-    for i in text:
-        if i.lower() in config.AVRO_CONSONANTS:
-            count += 1
-    return count
+# Constants
+# -- Path to current directory
+BASE_PATH = os.path.dirname(__file__)
+# -- path to avrodict.json
+AVRO_DICT_FILE = BASE_PATH+r"\resources\avrodict.json"
+# -- Loads json data from avrodict.json
+AVRO_DICT = json.load(codecs.open(AVRO_DICT_FILE, encoding='utf-8'))
+# -- Shortcut to vowels
+AVRO_VOWELS = set(AVRO_DICT['data']['vowel'])
+# -- Shortcut to consonants
+AVRO_CONSONANTS = set(AVRO_DICT['data']['consonant'])
+# -- Shortcut to case-sensitives
+AVRO_CASESENSITIVES = set(AVRO_DICT['data']['casesensitive'])
+# -- Shortcut to number
+AVRO_NUMBERS = set(AVRO_DICT['data']['number'])
