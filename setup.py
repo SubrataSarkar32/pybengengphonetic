@@ -6,7 +6,7 @@ try:
     from pybengengphonetic import __version__
 
     setup(name='pybengengphonetic',
-          version='1.0.0',
+          version='1.0.1',
           description='Python implementation to convert bengali to phonetic',
           long_description=open('README.rst', 'rt').read(),
           author='Subrata Sarkar',
@@ -15,16 +15,14 @@ try:
           packages=['pybengengphonetic','pybengengphonetic.utils'],
           package_data = {'pyhinavrophonetic': ['*.rst', 'resources/*.json','utils/resources/*.json']},
           include_package_data = True,
-          install_requires=["simplejson >= 3.0.0",'pyttsx >=1.1'],
+          install_requires=["simplejson >= 3.0.0",'pyttsx3 >=2.90'],
           license='GNU GPL v3 or later',
           classifiers=[
             'Development Status :: 3 - Alpha',
             'Intended Audience :: Developers',
             'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
             'Operating System :: OS Independent',
-            'Programming Language :: Python :: 2.5',
-            'Programming Language :: Python :: 2.6',
-            'Programming Language :: Python :: 2.7',
+            'Programming Language :: Python :: 3',
             ]
           )
 

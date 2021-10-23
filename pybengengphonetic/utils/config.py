@@ -36,7 +36,7 @@ import codecs
 # -- Path to current directory
 BASE_PATH = os.path.dirname(__file__)
 # -- path to avrodict.json
-AVRO_DICT_FILE = BASE_PATH+r"\resources\avrodict.json"
+AVRO_DICT_FILE = os.path.join(BASE_PATH,  "resources", "avrodict.json")
 # -- Loads json data from avrodict.json
 AVRO_DICT = json.load(codecs.open(AVRO_DICT_FILE, encoding='utf-8'))
 # -- Shortcut to vowels

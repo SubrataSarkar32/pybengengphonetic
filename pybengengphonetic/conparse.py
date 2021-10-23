@@ -99,7 +99,7 @@ def convert_to_speakable_phonetic(gitre=''):
     return text2
 
 def speak(text=''):
-    import pyttsx
+    import pyttsx3 as pyttsx
     engine = pyttsx.init()
     rate = engine.getProperty('rate')
     engine.setProperty('rate', rate-60)    
