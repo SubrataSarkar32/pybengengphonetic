@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: pybengengphonetic
-Version: 1.0.0
+Version: 1.0.1
 Author: Subrata Sarkar
 Author-email: subrotosarkar32 at gmail com
 Home-page: https://bitbucket.org/SubrataSarkar32/pybengengphonetic/
@@ -39,6 +39,4 @@ Classifier: Development Status :: 3 - Alpha
 Classifier: Intended Audience :: Developers
 Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
 Classifier: Operating System :: OS Independent
-Classifier: Programming Language :: Python :: 2.5
-Classifier: Programming Language :: Python :: 2.6
-Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
