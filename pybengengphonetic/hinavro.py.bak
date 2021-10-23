@@ -27,9 +27,9 @@ along with pyAvroPhonetic.  If not, see <http://www.gnu.org/licenses/>.
 
 
 # Imports
-from .utils import validate
-from .utils import utf
-from . import config
+from utils import validate
+from utils import utf
+import config
 
 
 # Constants
@@ -47,7 +47,7 @@ def parse(text):
 
     ::
       from pybengengphonetic import hinavro
-      hinavro.parse(u'\\u0995\\u09c7\\u09ae\\u09a8 \\u0986\\u099b')
+      hinavro.parse(u'\u0995\u09c7\u09ae\u09a8 \u0986\u099b')
 
     """
                             

@@ -22,26 +22,12 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with pyAvroPhonetic.  If not, see <http://www.gnu.org/licenses/>.
-
+P.S.:the file conparse.py & avrodict.json is under
+Copyright (C)GNU General Public License 2016 version 3
+Subrata Sarkar <subrotosarkar32@gmail.com>
 """
 
+__version_info__ = ('0', '1', '0')
+__version__ = '.'.join(__version_info__)
+print __version__
 
-# Imports
-from . import config
-
-
-def count_vowels(text):
-    """Count number of occurrences of vowels in a given string"""
-    count = 0
-    for i in text:
-        if i.lower() in config.AVRO_VOWELS:
-            count += 1
-    return count
-
-def count_consonants(text):
-    """Count number of occurrences of consonants in a given string"""
-    count = 0
-    for i in text:
-        if i.lower() in config.AVRO_CONSONANTS:
-            count += 1
-    return count

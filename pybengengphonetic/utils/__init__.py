@@ -28,7 +28,7 @@ along with pyAvroPhonetic.  If not, see <http://www.gnu.org/licenses/>.
 def utf(text):
     """Shortcut funnction for encoding given text with utf-8"""
     try:
-        output = unicode(text, encoding='utf-8')
+        output = str(text, encoding='utf-8')
     except UnicodeDecodeError:
         output = text
     except TypeError:

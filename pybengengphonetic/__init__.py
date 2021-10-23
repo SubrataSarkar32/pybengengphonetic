@@ -29,5 +29,5 @@ Subrata Sarkar <subrotosarkar32@gmail.com>
 
 __version_info__ = ('0', '1', '0')
 __version__ = '.'.join(__version_info__)
-print __version__
+print(__version__)
 
