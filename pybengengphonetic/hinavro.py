@@ -27,9 +27,9 @@ along with pyAvroPhonetic.  If not, see <http://www.gnu.org/licenses/>.
 
 
 # Imports
-from .utils import validate
-from .utils import utf
-from . import config
+from pybengengphonetic.utils import validate
+from pybengengphonetic.utils import utf
+from pybengengphonetic import config
 
 
 # Constants

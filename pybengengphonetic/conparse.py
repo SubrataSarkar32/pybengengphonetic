@@ -59,7 +59,7 @@ def convert_to_pyttsx_speakable(gitre=''):
                          text2=text2+list19[singlet]+'o'
         singlet+=1
     gitre=text2
-    from . import hinavro
+    from pybengengphonetic import hinavro
     gitre=hinavro.parse(gitre)
     return gitre
 

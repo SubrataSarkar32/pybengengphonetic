@@ -27,7 +27,7 @@ Copyright (C)GNU General Public License 2016 version 3
 Subrata Sarkar <subrotosarkar32@gmail.com>
 """
 
-__version_info__ = ('0', '1', '0')
+__version_info__ = ('1', '2', '0')
 __version__ = '.'.join(__version_info__)
 print(__version__)
 

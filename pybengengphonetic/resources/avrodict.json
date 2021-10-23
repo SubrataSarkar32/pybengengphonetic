@@ -1,4 +1,4 @@
-﻿{
+{
   "meta": {
     "file_name": "avrodict.json",
     "file_description": "Provides Avro Dictionary in JSON. Adapted from avro-lib.js",

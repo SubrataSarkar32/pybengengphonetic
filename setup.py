@@ -1,21 +1,22 @@
 #!/usr/bin/env python
 
 try:
-    from setuptools import setup
+    from setuptools import setup, find_packages
 
     from pybengengphonetic import __version__
 
     setup(name='pybengengphonetic',
-          version='1.0.1',
+          version=__version__,
           description='Python implementation to convert bengali to phonetic',
           long_description=open('README.rst', 'rt').read(),
+          long_description_content_type='text/markdown',
           author='Subrata Sarkar',
           author_email='subrotosarkar32@gmail.com',
-          url='https://bitbucket.org/SubrataSarkar32/pybengengphonetic/',
-          packages=['pybengengphonetic','pybengengphonetic.utils'],
-          package_data = {'pyhinavrophonetic': ['*.rst', 'resources/*.json','utils/resources/*.json']},
+          url='https://github.com/SubrataSarkar32/pybengengphonetic',
+          packages=find_packages(),
+          package_data = {'pybengengphonetic': ['*.rst', 'resources/*.json']},
           include_package_data = True,
-          install_requires=["simplejson >= 3.0.0",'pyttsx3 >=2.90'],
+          install_requires=['pyttsx3 >=2.90'],
           license='GNU GPL v3 or later',
           classifiers=[
             'Development Status :: 3 - Alpha',
