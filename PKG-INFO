@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: pybengengphonetic
-Version: 1.0.1
+Version: 1.2.0
 Author: Subrata Sarkar
 Author-email: subrotosarkar32 at gmail com
 Home-page: https://bitbucket.org/SubrataSarkar32/pybengengphonetic/
@@ -33,7 +33,7 @@ Description: Python implementation of Avro Phonetic in bengali.
            using speak()
         Example:convert_to_pyttsx_speakable(u'\u0995\u09c7\u09ae\u09a8 \u0986\u099b')
                 speak(u'\u0995\u09c7\u09ae\u09a8 \u0986\u099b')
-        Requires simplejson>=3.0,pyttsx>=1.1
+        Requires pyttsx>=1.1
 Keywords: bengali to phonetic
 Classifier: Development Status :: 3 - Alpha
 Classifier: Intended Audience :: Developers
