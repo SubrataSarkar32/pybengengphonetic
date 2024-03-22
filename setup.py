@@ -2,7 +2,6 @@
 
 try:
     from setuptools import setup, find_packages
-
     from pybengengphonetic import __version__
 
     setup(name='pybengengphonetic',
@@ -14,8 +13,8 @@ try:
           author_email='subrotosarkar32@gmail.com',
           url='https://github.com/SubrataSarkar32/pybengengphonetic',
           packages=find_packages(),
-          package_data = {'pybengengphonetic': ['*.rst', 'resources/*.json']},
-          include_package_data = True,
+          package_data={'pybengengphonetic': ['*.rst', 'resources/*.json']},
+          include_package_data=True,
           install_requires=['pyttsx3 >=2.90'],
           license='GNU GPL v3 or later',
           classifiers=[
